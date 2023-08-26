@@ -1,4 +1,4 @@
-import { Sidebar } from "./components";
+import { Header, Sidebar } from "./components";
 
 function App() {
 	return (
@@ -6,9 +6,9 @@ function App() {
 			<div className="flex">
 				<Sidebar />
 
-				<main>
-					<h2>Main Content</h2>
-				</main>
+				<div className="content">
+					<Header />
+				</div>
 			</div>
 		</div>
 	);

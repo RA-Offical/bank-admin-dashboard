@@ -1,0 +1,12 @@
+.primary-header {
+	padding-block: 2rem;
+}
+
+.primary-header-left {
+	color: var(--color-accent-white);
+	gap: 1.6rem;
+}
+
+.primary-header-right {
+	gap: 1.6rem;
+}

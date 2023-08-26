@@ -98,9 +98,59 @@ a {
 	font-size: var(--fs-800);
 }
 
+/* icons */
+.icon-sm {
+	width: 2.2rem;
+	height: 2.2rem;
+}
+
+.icon {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.icon-md {
+	width: 2.8rem;
+	height: 2.8rem;
+}
+
+/* buttons */
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	padding: 0.4375em 0.875em;
+	font-weight: 700;
+	border-radius: 0.6rem;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	text-align: center;
+	transition: backround-color var(--transition-duration),
+		color var(--transition-duration);
+}
+
+.btn--icon {
+	padding: 0;
+	background-color: transparent;
+}
+
+.btn--icon-primary {
+	color: var(--color-neutral-200);
+}
+
+.btn--icon-primary:hover {
+	color: var(--color-accent-white);
+}
+
+.btn--bg-icon {
+	padding: 0.5em;
+}
+
 /* main */
-main {
+.content {
 	flex: 1;
+	padding: 2rem;
 }
 
 /* profile image */

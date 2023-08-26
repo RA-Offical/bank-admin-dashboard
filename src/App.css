@@ -5,13 +5,109 @@ body {
 	background-color: var(--color-neutral-500);
 }
 
-/* generic classes */
-.container {
-	--max-width: 1800px;
-	max-width: var(--max-width);
-	margin-inline: auto;
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
+/* generic classes */
 .flex {
 	display: flex;
+}
+
+.align-ic {
+	align-items: center;
+}
+
+.justify-btw {
+	justify-content: space-between;
+}
+/* font weights classes */
+
+.fw-light {
+	font-weight: var(--fw-ligth);
+}
+
+.fw-medium {
+	font-weight: var(--fw-medium);
+}
+
+.fw-semi-bold {
+	font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+	font-weight: var(--fw-bold);
+}
+
+/* color classes */
+.text-neutral-300 {
+	color: var(--color-neutral-300);
+}
+.text-neutral-400 {
+	color: var(--color-neutral-400);
+}
+
+.text-accent-white {
+	color: var(--color-accent-white);
+}
+
+.text-danger-500 {
+	color: var(--color-danger-500);
+}
+.text-danger-600 {
+	color: var(--color-danger-600);
+}
+
+.text-success-500 {
+	color: var(--color-success-500);
+}
+
+/* background classes */
+
+.bg-primary-300 {
+	background-color: var(--color-primary-300);
+}
+
+.bg-primary-400 {
+	background-color: var(--color-primary-400);
+}
+
+.bg-primary-500 {
+	background-color: var(--color-primary-500);
+}
+
+.bg-accent-pumpkin {
+	background-color: var(--color-accent-pumpkin);
+}
+
+/* font classes */
+.text-small {
+	font-size: var(--fs-300);
+}
+
+.text-medium {
+	font-size: var(--fs-400);
+}
+
+.text-medium {
+	font-size: var(--fs-700);
+}
+
+.text-large {
+	font-size: var(--fs-800);
+}
+
+/* main */
+main {
+	flex: 1;
+}
+
+/* profile image */
+.profile-img {
+	--dimen: 4.8rem;
+	width: var(--dimen);
+	height: var(--dimen);
+	border-radius: var(--rounded-pill);
+	object-fit: cover;
 }

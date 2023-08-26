@@ -1,0 +1,31 @@
+.primary-nav {
+	flex: 1;
+	overflow: auto;
+}
+
+.primary-nav::-webkit-scrollbar {
+	width: 8px;
+}
+
+.primary-nav::-webkit-scrollbar-track {
+	border-radius: var(--rounded-pill);
+	background-color: var(--color-primary-300);
+}
+
+.primary-nav::-webkit-scrollbar-thumb {
+	border-radius: var(--rounded-pill);
+	background-color: var(--color-neutral-400);
+}
+
+.nav__item:not(:last-child) {
+	margin-bottom: 1rem;
+}
+.nav__item {
+	margin-right: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+	.nav__item {
+		margin-right: 0;
+	}
+}

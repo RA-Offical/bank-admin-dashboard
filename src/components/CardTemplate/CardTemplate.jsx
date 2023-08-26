@@ -4,7 +4,7 @@ const CardTemplate = ({ title, cardBody }) => {
 	return (
 		<article className="card">
 			<header className="flex align-ic justify-btw card-header">
-				<h2 className=" card__title">Cards</h2>
+				<h2 className=" card__title">{title}</h2>
 				<button className="btn btn--icon btn--icon-primary">
 					<svg className="icon-md">
 						<use xlinkHref={`${sprite}#plus`}></use>

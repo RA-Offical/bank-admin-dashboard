@@ -1,4 +1,4 @@
-import { Header, Sidebar } from "./components";
+import { CardTemplate, Header, Sidebar } from "./components";
 
 function App() {
 	return (
@@ -8,6 +8,12 @@ function App() {
 
 				<div className="content">
 					<Header />
+
+					<main>
+						<div className="main-content">
+							<CardTemplate />
+						</div>
+					</main>
 				</div>
 			</div>
 		</div>

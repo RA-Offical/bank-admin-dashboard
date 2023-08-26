@@ -4,6 +4,7 @@
 @import url(./components/Navigation/Navigation.css);
 @import url(./components/NavigationCategory/NavigationCategory.css);
 @import url(./components/Header/Header.css);
+@import url(./components/CardTemplate/CardTemplate.css);
 
 :root {
 	/* defining colors */
@@ -50,6 +51,7 @@
 	/* border radius */
 
 	--rounded-100: 0.8rem;
+	--rounded-200: 1.4rem;
 	--rounded-pill: 9999px;
 
 	--transition-duration: 350ms;

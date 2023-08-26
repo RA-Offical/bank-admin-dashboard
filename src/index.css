@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap");
+@import url(./App.css);
+
+:root {
+	/* defining colors */
+	--color-primary-300: #473b33;
+	--color-primary-400: #302924;
+	--color-primary-500: #29221d;
+
+	--color-accent-pumpkin: #fe6c00;
+	--color-accent-yellow: #fec80a;
+	--color-accent-peach: #ffc397;
+	--color-accent-white: #fff;
+	--color-accent-black: #000;
+
+	--color-neutral-200: #bdbabb;
+	--color-neutral-300: #a8a5a6;
+	--color-neutral-400: #8a8587;
+	--color-neutral-500: #1e1611;
+
+	--color-danger-500: #fe1e00;
+	--color-danger-600: #fe1e00c9;
+
+	--color-success-500: #00fe93;
+
+	/* defining weights */
+	--fs-300: 1.4rem;
+	--fs-400: 1.6rem;
+	--fs-500: 1.7rem;
+	--fs-600: 1.8rem;
+	--fs-700: 2rem;
+	--fs-800: 2.4rem;
+
+	--fs-body: var(--fs-400);
+
+	/* defining font familiy */
+	--ff-primary: "Bai Jamjuree", sans-serif;
+	--ff-secondary: var(--ff-primary);
+
+	/* defining font weights */
+	--fw-light: 300;
+	--fw-medium: 500;
+	--fw-semi-bold: 600;
+	--fw-bold: 700;
+
+	--transition-duration: 350ms;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/* // https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}

@@ -1,0 +1,17 @@
+body {
+	font-family: var(--ff-primary);
+	font-size: var(--fs-body);
+	color: var(--color-neutral-200);
+	background-color: var(--color-neutral-500);
+}
+
+/* generic classes */
+.container {
+	--max-width: 1800px;
+	max-width: var(--max-width);
+	margin-inline: auto;
+}
+
+.flex {
+	display: flex;
+}

@@ -1,7 +1,4 @@
 .card {
-	/* max-width: 400px;
-	height: 300px; */
-
 	padding: 1.6rem;
 	background-color: var(--color-primary-500);
 	border-radius: var(--rounded-200);
@@ -9,4 +6,8 @@
 
 .card-header {
 	margin-bottom: 1.6rem;
+}
+
+.card__title {
+	letter-spacing: 1px;
 }

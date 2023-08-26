@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap");
+
 @import url(./App.css);
 @import url(./components/Sidebar/Sidebar.css);
 @import url(./components/Navigation/Navigation.css);
 @import url(./components/NavigationCategory/NavigationCategory.css);
 @import url(./components/Header/Header.css);
 @import url(./components/CardTemplate/CardTemplate.css);
-
 :root {
 	/* defining colors */
 	--color-primary-300: #473b33;

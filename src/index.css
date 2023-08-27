@@ -8,6 +8,7 @@
 @import url(./components/CardTemplate/CardTemplate.css);
 @import url(./components/BalanceCard/BalanceCard.css);
 @import url(./components/TransactionCard/TransactionCard.css);
+@import url(./components/SubscriptionCard/SubscriptionCard.css);
 
 :root {
 	/* defining colors */

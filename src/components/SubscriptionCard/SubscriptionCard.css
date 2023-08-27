@@ -1,0 +1,24 @@
+.subscription__item:not(:last-child) {
+	margin-bottom: 2.8rem;
+}
+
+.subscription-info-container {
+	gap: 1rem;
+}
+
+.subscription-icon-container {
+	width: 4rem;
+	height: 4rem;
+	background-color: var(--color-danger-600);
+	justify-content: center;
+	border-radius: var(--rounded-pill);
+}
+
+.subscription-info {
+	gap: 0.8rem;
+	align-items: baseline;
+}
+
+.subscription__price {
+	margin-left: auto;
+}

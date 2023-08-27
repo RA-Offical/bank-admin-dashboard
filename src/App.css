@@ -41,6 +41,9 @@ a {
 }
 
 /* color classes */
+.text-neutral-200 {
+	color: var(--color-neutral-200);
+}
 .text-neutral-300 {
 	color: var(--color-neutral-300);
 }

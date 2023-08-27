@@ -5,26 +5,26 @@ const TransactionCard = () => {
 		<div className="transcation-card">
 			<ul role="list" className="transcation-list">
 				{transcationData.map((data) => {
+					const { id, name, image, date, amount } = data;
+
 					return (
-						<li key={data.id} className="transaction__item">
+						<li key={id} className="transaction__item">
 							<div className="flex align-ic  transaction-info">
 								<img
 									className="profile-img"
-									src={data.image}
-									alt={data.name}
+									src={image}
+									alt={name}
 								/>
 
 								<div>
 									<h3 className="text-small fw-bold">
-										{data.name}
+										{name}
 									</h3>
-									<p className="text-neutral-400">
-										{data.date}
-									</p>
+									<p className="text-neutral-400">{date}</p>
 								</div>
 
-								<p className="transaction__amount">
-									$ {data.amount.toFixed(2)}
+								<p className="fw-medium transaction__amount">
+									$ {amount.toFixed(2)}
 								</p>
 							</div>
 						</li>

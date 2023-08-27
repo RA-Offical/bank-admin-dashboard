@@ -5,6 +5,7 @@ import {
 	Sidebar,
 	TransactionCard,
 } from "./components";
+import SubscriptionCard from "./components/SubscriptionCard/SubscriptionCard";
 
 function App() {
 	return (
@@ -21,10 +22,16 @@ function App() {
 								title={"Card"}
 								cardBody={<BalanceCard />}
 							/>
+
 							<CardTemplate
 								title={"All Transactions"}
 								cardBody={<TransactionCard />}
-							/>{" "}
+							/>
+
+							<CardTemplate
+								title={"Subscriptions"}
+								cardBody={<SubscriptionCard />}
+							/>
 						</div>
 					</main>
 				</div>

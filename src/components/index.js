@@ -6,3 +6,4 @@ export { default as CardTemplate } from "./CardTemplate/CardTemplate";
 export { default as BalanceCard } from "./BalanceCard/BalanceCard";
 export { default as TransactionCard } from "./TransactionCard/TransactionCard";
 export { default as ReportCard } from "./ReportCard/ReportCard";
+export { default as SavingCard } from "./SavingCard/SavingCard";

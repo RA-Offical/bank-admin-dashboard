@@ -1,0 +1,45 @@
+.saving-notification {
+	gap: 1rem;
+}
+.saving-notification .profile-img {
+	--dimen: 4.2rem;
+}
+
+.saving__amount {
+	margin-left: auto;
+}
+
+.saving-lend-container {
+	margin-top: 1rem;
+	gap: 1rem;
+}
+
+.badge {
+	border-radius: var(--rounded-pill);
+	padding: 0.2rem 1rem;
+}
+
+.saving-progress-container {
+	margin-top: 1rem;
+}
+
+.saving__progress {
+	height: 1.5rem;
+	width: 100%;
+	border: 1px solid var(--color-primary-500);
+}
+
+.saving__progress::-webkit-progress-bar {
+	border-radius: var(--rounded-pill);
+	background-color: var(--color-primary-300);
+	overflow: hidden;
+}
+.saving__progress::-webkit-progress-value {
+	background-color: var(--color-accent-pumpkin);
+	/* background-image: linear-gradient(
+		68deg,
+		rgba(185, 252, 30, 1) -1%,
+		rgba(210, 68, 10, 1) 46.2%,
+		rgba(13, 10, 210, 1) 103.6%
+	); */
+}

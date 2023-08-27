@@ -3,6 +3,7 @@ import {
 	CardTemplate,
 	Header,
 	ReportCard,
+	SavingCard,
 	Sidebar,
 	TransactionCard,
 } from "./components";
@@ -20,6 +21,11 @@ function App() {
 
 					<main>
 						<div className="main-content">
+							<CardTemplate
+								title={"Saving"}
+								cardBody={<SavingCard />}
+							/>
+
 							<CardTemplate
 								title={"Report"}
 								cardBody={<ReportCard />}

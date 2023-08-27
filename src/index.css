@@ -11,6 +11,7 @@
 @import url(./components/SubscriptionCard/SubscriptionCard.css);
 @import url(./components/LoanCard/LoanCard.css);
 @import url(./components/ReportCard/ReportCard.css);
+@import url(./components/SavingCard/SavingCard.css);
 
 :root {
 	/* defining colors */

@@ -10,7 +10,7 @@ const SubscriptionCard = () => {
 					return (
 						<li key={id} className="subscription__item">
 							<div className="flex align-ic subscription-info-container">
-								<div className="flex align-ic  subscription-icon-container">
+								<div className="flex align-ic text-accent-white  subscription-icon-container">
 									<svg className="icon">
 										<use
 											xlinkHref={`${sprite}#alert`}
@@ -25,7 +25,7 @@ const SubscriptionCard = () => {
 									due <p>{date}</p>
 								</div>
 
-								<p className="subscription__price">
+								<p className="fw-semi-bold subscription__price">
 									$ {amount.toFixed(2)}
 								</p>
 							</div>

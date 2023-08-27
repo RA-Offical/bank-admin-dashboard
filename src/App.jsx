@@ -5,6 +5,7 @@ import {
 	Sidebar,
 	TransactionCard,
 } from "./components";
+import LoanCard from "./components/LoanCard/LoanCard";
 import SubscriptionCard from "./components/SubscriptionCard/SubscriptionCard";
 
 function App() {
@@ -18,6 +19,10 @@ function App() {
 
 					<main>
 						<div className="main-content">
+							<CardTemplate
+								title={"Loans"}
+								cardBody={<LoanCard />}
+							/>
 							<CardTemplate
 								title={"Card"}
 								cardBody={<BalanceCard />}

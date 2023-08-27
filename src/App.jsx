@@ -1,6 +1,8 @@
 import {
 	BalanceCard,
+	BudgetCard,
 	CardTemplate,
+	FinancialCard,
 	Header,
 	ReportCard,
 	SavingCard,
@@ -21,6 +23,16 @@ function App() {
 
 					<main>
 						<div className="main-content">
+							<CardTemplate
+								title={"Budget"}
+								cardBody={<BudgetCard />}
+							/>
+
+							<CardTemplate
+								title={"Financial Advice"}
+								cardBody={<FinancialCard />}
+							/>
+
 							<CardTemplate
 								title={"Saving"}
 								cardBody={<SavingCard />}

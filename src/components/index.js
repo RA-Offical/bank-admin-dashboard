@@ -7,3 +7,5 @@ export { default as BalanceCard } from "./BalanceCard/BalanceCard";
 export { default as TransactionCard } from "./TransactionCard/TransactionCard";
 export { default as ReportCard } from "./ReportCard/ReportCard";
 export { default as SavingCard } from "./SavingCard/SavingCard";
+export { default as FinancialCard } from "./FinancialCard/FinancialCard";
+export { default as BudgetCard } from "./BudgetCard/BudgetCard";

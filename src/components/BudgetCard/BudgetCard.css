@@ -1,0 +1,17 @@
+.budget-divison-container {
+	margin-top: 2rem;
+	padding: 1.6rem;
+	border-radius: var(--rounded-200);
+}
+
+.budget__item:not(:last-child) {
+	margin-bottom: 2.4rem;
+}
+
+.budget-category {
+	gap: 1.6rem;
+}
+
+.budget__amount {
+	margin-left: auto;
+}

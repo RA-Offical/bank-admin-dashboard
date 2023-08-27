@@ -1,0 +1,16 @@
+.transaction__item:not(:last-child) {
+	margin-bottom: 2.8rem;
+}
+
+.transaction-info {
+	gap: 1rem;
+}
+
+.transaction-info .profile-img {
+	--dimen: 4.2rem;
+}
+
+.transaction__amount {
+	margin-left: auto;
+	color: var(--color-danger-500);
+}

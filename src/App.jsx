@@ -1,4 +1,10 @@
-import { BalanceCard, CardTemplate, Header, Sidebar } from "./components";
+import {
+	BalanceCard,
+	CardTemplate,
+	Header,
+	Sidebar,
+	TransactionCard,
+} from "./components";
 
 function App() {
 	return (
@@ -15,6 +21,10 @@ function App() {
 								title={"Card"}
 								cardBody={<BalanceCard />}
 							/>
+							<CardTemplate
+								title={"All Transactions"}
+								cardBody={<TransactionCard />}
+							/>{" "}
 						</div>
 					</main>
 				</div>

@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { person_one } from "../../utils/images";
 import { Navigation } from "../";
 
-const Sidebar = () => {
-	const [isOpen, setIsOpen] = useState(true);
-
+const Sidebar = ({ isOpen }) => {
 	return (
-		<aside className="bg-primary-500 flex sidebar">
+		<aside className={`bg-primary-500 flex sidebar ${isOpen && "open"}`}>
 			{/* sidebar header for account holder information */}
 			<header className="flex align-ic sidebar-header">
 				<img

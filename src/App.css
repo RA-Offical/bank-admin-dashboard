@@ -156,6 +156,45 @@ a {
 	padding: 2rem;
 }
 
+/* main content */
+.main-content {
+	display: grid;
+	row-gap: 2rem;
+	column-gap: 2rem;
+
+	/* grid-temp */
+	grid-template-areas:
+		"balance-card"
+		"transaction-card"
+		"report-card"
+		"budget-card"
+		"subscription-card"
+		"saving-card"
+		"loan-card"
+		"financial-card";
+}
+
+@media screen and (min-width: 768px) {
+	.main-content {
+		grid-template-areas:
+			"balance-card transaction-card"
+			"report-card report-card"
+			"budget-card subscription-card"
+			"budget-card saving-card"
+			"loan-card financial-card";
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (min-width: 1200px) {
+	.main-content {
+		grid-template-areas:
+			"balance-card transaction-card report-card"
+			"budget-card subscription-card saving-card"
+			"budget-card loan-card financial-card";
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
 /* profile image */
 .profile-img {
 	--dimen: 4.8rem;

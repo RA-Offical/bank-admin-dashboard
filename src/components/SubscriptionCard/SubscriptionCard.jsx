@@ -18,11 +18,11 @@ const SubscriptionCard = () => {
 									</svg>
 								</div>
 
-								<div className="flex text-neutral-400 subscription-info">
+								<div className="text-neutral-400 subscription-info">
 									<p className="text-neutral-200 fw-semi-bold text-small">
 										{service}
-									</p>{" "}
-									due <p>{date}</p>
+									</p>
+									<p>due {date}</p>
 								</div>
 
 								<p className="fw-semi-bold subscription__price">

@@ -1,8 +1,8 @@
 import { sprite } from "../../utils/images";
 
-const CardTemplate = ({ title, cardBody }) => {
+const CardTemplate = ({ title, cardBody, style }) => {
 	return (
-		<article className="card">
+		<article style={style} className="card">
 			<header className="flex align-ic justify-btw card-header">
 				<h2 className="fw-medium card__title">{title}</h2>
 				<button className="btn btn--icon btn--icon-primary">

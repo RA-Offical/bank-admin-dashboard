@@ -1,12 +1,15 @@
 import { sprite } from "../../utils/images";
 
-const Header = () => {
+const Header = ({ isOpen, setIsOpen }) => {
 	return (
 		<header className="flex align-ic justify-btw primary-header">
 			{/* left section */}
 			<div className="flex align-ic primary-header-left">
 				{/* icon */}
-				<button className="btn btn--icon btn--icon-primary">
+				<button
+					className="btn btn--icon btn--icon-primary"
+					onClick={() => setIsOpen(!isOpen)}
+				>
 					<svg className="icon-sm menu--icon">
 						<use xlinkHref={`${sprite}#menu`}></use>
 					</svg>

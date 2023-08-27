@@ -9,5 +9,6 @@
 }
 
 .card__title {
+	font-weight: var(--fw-bold);
 	letter-spacing: 1px;
 }

@@ -1,9 +1,11 @@
 .loan-card {
-	gap: 4rem;
+	gap: 2rem;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .doughnet-chart-wrapper {
-	max-width: 25rem;
+	max-width: 20rem;
 }
 
 .loan-item:first-child {

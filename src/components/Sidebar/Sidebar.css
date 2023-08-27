@@ -1,18 +1,24 @@
 .sidebar {
-	width: 27rem;
+	--width: 27rem;
+	flex-shrink: 0;
+	width: var(--width);
 	height: 100vh;
 	height: 100dvh;
-	padding: 2.4rem 1.6rem;
+	padding: 2.4rem 1.6rem 0;
 	flex-direction: column;
 	gap: 3.5rem;
 	position: sticky;
+	justify-content: stretch;
 	top: 0;
-	bottom: 0;
 	left: 0;
+	margin-left: calc(-1 * var(--width));
+	transform: translateX(-100%);
+	transition: transform var(--transition-duration);
 }
 
 .sidebar.open {
 	margin-left: 0;
+	transform: translateX(0);
 }
 
 .sidebar-header {
@@ -22,7 +28,8 @@
 
 @media screen and (max-width: 950px) {
 	.sidebar {
-		width: 10rem;
+		padding-inline: 1rem;
+		--width: 8rem;
 	}
 
 	.sidebar-header {

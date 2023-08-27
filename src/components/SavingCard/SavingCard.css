@@ -10,8 +10,9 @@
 }
 
 .saving-lend-container {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	gap: 1rem;
+	flex-wrap: wrap;
 }
 
 .badge {
@@ -26,13 +27,15 @@
 .saving__progress {
 	height: 1.5rem;
 	width: 100%;
-	border: 1px solid var(--color-primary-500);
+	border-radius: var(--rounded-pill);
+	overflow: hidden;
+	background-color: var(--color-primary-300);
+	border: 0;
 }
 
 .saving__progress::-webkit-progress-bar {
 	border-radius: var(--rounded-pill);
 	background-color: var(--color-primary-300);
-	overflow: hidden;
 }
 .saving__progress::-webkit-progress-value {
 	background-color: var(--color-accent-pumpkin);
@@ -42,4 +45,9 @@
 		rgba(210, 68, 10, 1) 46.2%,
 		rgba(13, 10, 210, 1) 103.6%
 	); */
+}
+
+.saving__progress::-moz-progress-bar {
+	background-color: var(--color-accent-pumpkin);
+	/* border-radius: var(--rounded-pill); */
 }

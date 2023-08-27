@@ -7,6 +7,7 @@
 }
 
 .subscription-icon-container {
+	flex-shrink: 0;
 	width: 4rem;
 	height: 4rem;
 	background-color: var(--color-danger-600);
@@ -14,11 +15,7 @@
 	border-radius: var(--rounded-pill);
 }
 
-.subscription-info {
-	gap: 0.8rem;
-	align-items: baseline;
-}
-
 .subscription__price {
 	margin-left: auto;
+	white-space: nowrap;
 }

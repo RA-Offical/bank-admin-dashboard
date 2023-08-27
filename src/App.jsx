@@ -2,6 +2,7 @@ import {
 	BalanceCard,
 	CardTemplate,
 	Header,
+	ReportCard,
 	Sidebar,
 	TransactionCard,
 } from "./components";
@@ -19,6 +20,10 @@ function App() {
 
 					<main>
 						<div className="main-content">
+							<CardTemplate
+								title={"Report"}
+								cardBody={<ReportCard />}
+							/>
 							<CardTemplate
 								title={"Loans"}
 								cardBody={<LoanCard />}

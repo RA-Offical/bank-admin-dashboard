@@ -10,6 +10,7 @@
 @import url(./components/TransactionCard/TransactionCard.css);
 @import url(./components/SubscriptionCard/SubscriptionCard.css);
 @import url(./components/LoanCard/LoanCard.css);
+@import url(./components/ReportCard/ReportCard.css);
 
 :root {
 	/* defining colors */

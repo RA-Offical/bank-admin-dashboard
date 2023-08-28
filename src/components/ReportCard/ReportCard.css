@@ -1,4 +1,22 @@
+.report-card-wrapper {
+	align-self: stretch;
+	display: flex;
+	flex-direction: column;
+}
+
+.report-card {
+	flex: 1;
+}
+
+.bar-chart-wrapper {
+	height: 100%;
+	max-width: 50rem;
+	margin-inline: auto;
+}
 .bar-chart-wrapper > canvas {
 	width: 90% !important;
 	min-width: 0 !important;
+	height: 100% !important;
+	object-fit: contain;
+	image-rendering: optimizeQuality;
 }

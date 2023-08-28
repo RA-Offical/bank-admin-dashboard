@@ -58,6 +58,7 @@ function App() {
 								style={{ gridArea: "report-card" }}
 								title={"Report"}
 								cardBody={<ReportCard />}
+								classes={"report-card-wrapper"}
 							/>
 
 							{/* budget card */}

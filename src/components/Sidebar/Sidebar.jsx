@@ -18,7 +18,11 @@ const Sidebar = ({ isOpen }) => {
 						setIsOpenHalf(true);
 					}}
 				>
-					<svg className={`icon icon--arrow-left`}>
+					<svg
+						className={`icon icon--arrow-left ${
+							isOpenHalf && "hidden"
+						}`}
+					>
 						<use xlinkHref={`${sprite}#arrow`}></use>
 					</svg>
 				</button>
@@ -28,7 +32,11 @@ const Sidebar = ({ isOpen }) => {
 						setIsOpenHalf(false);
 					}}
 				>
-					<svg className="icon icon--arrow-right">
+					<svg
+						className={`icon icon--arrow-right ${
+							!isOpenHalf && "hidden"
+						}`}
+					>
 						<use xlinkHref={`${sprite}#arrow`}></use>
 					</svg>
 				</button>

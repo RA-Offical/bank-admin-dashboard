@@ -4,7 +4,7 @@
 	width: var(--width);
 	height: 100vh;
 	height: 100dvh;
-	padding: 2.4rem 1.6rem 0;
+	padding: 2.4rem 1.6rem;
 	flex-direction: column;
 	gap: 3.5rem;
 	position: sticky;
@@ -13,7 +13,8 @@
 	left: 0;
 	margin-left: calc(-1 * var(--width));
 	transform: translateX(-100%);
-	transition: transform var(--transition-duration);
+	transition: transform var(--transition-duration),
+		width var(--transition-duration);
 }
 
 .sidebar.open {

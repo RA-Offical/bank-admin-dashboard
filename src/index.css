@@ -69,6 +69,21 @@ html {
 	font-size: 62.5%;
 }
 
+html::-webkit-scrollbar {
+	width: 15px;
+}
+
+html::-webkit-scrollbar-track {
+	border-radius: var(--rounded-pill);
+	background-color: var(--color-primary-400);
+}
+
+html::-webkit-scrollbar-thumb {
+	border: 3px solid var(--color-primary-400);
+	border-radius: var(--rounded-pill);
+	background-color: var(--color-primary-300);
+}
+
 /* // https://piccalil.li/blog/a-modern-css-reset */
 
 /* Box sizing rules */

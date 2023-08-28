@@ -27,9 +27,13 @@
 .saving__progress {
 	height: 1.5rem;
 	width: 100%;
-	border-radius: var(--rounded-pill);
+	border-radius: var(
+		--rounded-pill
+	); /*does not work with -webkit. Only work with progress bar outer html element not the value element*/
 	overflow: hidden;
-	background-color: var(--color-primary-300);
+	background-color: var(
+		--color-primary-300
+	); /* this will not work on -webkit. Only work with progress bar outer html element not the value elemen*/
 	border: 0;
 }
 
@@ -39,12 +43,6 @@
 }
 .saving__progress::-webkit-progress-value {
 	background-color: var(--color-accent-pumpkin);
-	/* background-image: linear-gradient(
-		68deg,
-		rgba(185, 252, 30, 1) -1%,
-		rgba(210, 68, 10, 1) 46.2%,
-		rgba(13, 10, 210, 1) 103.6%
-	); */
 }
 
 .saving__progress::-moz-progress-bar {

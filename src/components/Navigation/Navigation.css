@@ -9,12 +9,12 @@
 
 .primary-nav::-webkit-scrollbar-track {
 	border-radius: var(--rounded-pill);
-	background-color: var(--color-primary-300);
+	background-color: var(--color-primary-400);
 }
 
 .primary-nav::-webkit-scrollbar-thumb {
 	border-radius: var(--rounded-pill);
-	background-color: var(--color-neutral-400);
+	background-color: var(--color-primary-300);
 }
 
 .nav__item:not(:last-child) {

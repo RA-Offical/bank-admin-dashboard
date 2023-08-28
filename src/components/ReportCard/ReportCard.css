@@ -1,4 +1,4 @@
 .bar-chart-wrapper > canvas {
-	width: 20rem !important;
+	width: 90% !important;
 	min-width: 0 !important;
 }

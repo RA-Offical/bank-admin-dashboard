@@ -31,7 +31,7 @@ function App() {
 
 	return (
 		<div className="app">
-			<div className="flex">
+			<div className="flex container">
 				<Sidebar isOpen={isOpen} />
 
 				<div className="content">

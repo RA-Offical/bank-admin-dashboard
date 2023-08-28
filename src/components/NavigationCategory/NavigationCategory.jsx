@@ -6,11 +6,14 @@ const NavigationCategory = ({
 	icon,
 	id,
 	setCategoryNumber,
+	isOpenHalf,
 }) => {
 	return (
 		<a
 			href="#"
-			className={`flex align-ic navigation-category ${classes}`}
+			className={`flex align-ic navigation-category ${classes} ${
+				isOpenHalf && "open-half"
+			}`}
 			onClick={() => setCategoryNumber(id)}
 		>
 			{/* icon */}

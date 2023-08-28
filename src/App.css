@@ -3,6 +3,7 @@ body {
 	font-size: var(--fs-body);
 	color: var(--color-neutral-200);
 	background-color: var(--color-neutral-500);
+	min-width: 370px;
 }
 
 a {
@@ -11,6 +12,10 @@ a {
 }
 
 /* generic classes */
+.hidden {
+	display: none;
+}
+
 .flex {
 	display: flex;
 }
@@ -131,6 +136,7 @@ a {
 	text-align: center;
 	transition: backround-color var(--transition-duration),
 		color var(--transition-duration);
+	color: inherit;
 }
 
 .btn--icon {

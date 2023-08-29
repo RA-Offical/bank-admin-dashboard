@@ -34,3 +34,7 @@
 .navigation-category.open-half .navigation-category__title {
 	display: none;
 }
+
+.navigation-category__title {
+	white-space: nowrap;
+}

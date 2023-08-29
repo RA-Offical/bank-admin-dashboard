@@ -19,6 +19,7 @@
 	transform: translateX(-100%);
 	transition: transform var(--transition-duration),
 		width var(--transition-duration), margin-left var(--transition-duration);
+	overflow: hidden;
 }
 
 .sidebar-wrapper.open .sidebar {
@@ -50,6 +51,10 @@
 .sidebar-header {
 	height: 5rem;
 	gap: 2rem;
+}
+
+.account-holder-username {
+	white-space: nowrap;
 }
 
 @media screen and (max-width: 950px) {

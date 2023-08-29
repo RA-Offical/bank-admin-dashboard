@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, memo } from "react";
 import { NavigationCategory } from "../";
 import { navData } from "../../data/navData";
 
@@ -25,4 +25,4 @@ const Navigation = ({ isOpenHalf }) => {
 	);
 };
 
-export default Navigation;
+export default memo(Navigation);

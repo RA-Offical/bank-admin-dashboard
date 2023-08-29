@@ -16,23 +16,23 @@ import SubscriptionCard from "./components/SubscriptionCard/SubscriptionCard";
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
 
-	useEffect(() => {
-		// set the sidebar preference
-		const sidebarPref = window.localStorage.getItem("sidebarPref");
-		if (sidebarPref) {
-			setIsOpen(JSON.parse(sidebarPref).isOpen);
-		}
-	}, []);
+	// useEffect(() => {
+	// 	// set the sidebar preference
+	// 	const sidebarPref = window.localStorage.getItem("sidebarPref");
+	// 	if (sidebarPref) {
+	// 		setIsOpen(JSON.parse(sidebarPref).isOpen);
+	// 	}
+	// }, []);
 
-	useEffect(() => {
-		// save the user sidebar preference
-		window.localStorage.setItem("sidebarPref", JSON.stringify({ isOpen }));
-	}, [isOpen]);
+	// useEffect(() => {
+	// 	// save the user sidebar preference
+	// 	window.localStorage.setItem("sidebarPref", JSON.stringify({ isOpen }));
+	// }, [isOpen]);
 
 	return (
 		<div className="app">
 			<div className="flex container">
-				<Sidebar isOpen={isOpen} />
+				<Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
 
 				<div className="content">
 					<Header setIsOpen={setIsOpen} isOpen={isOpen} />

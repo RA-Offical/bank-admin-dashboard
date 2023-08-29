@@ -1,10 +1,12 @@
 .navigation-category {
-	padding: 1.2rem 1.6rem;
+	padding-inline: 1.4rem;
+	height: 5rem;
 	border: 1px solid transparent;
 	border-radius: var(--rounded-100);
 	gap: 1.6rem;
 	transition: background-color var(--transition-duration),
-		border-color var(--transition-duration);
+		border-color var(--transition-duration),
+		padding var(--transition-duration), width var(--transition-duration);
 }
 
 .navigation-category.active {
@@ -22,9 +24,8 @@
 }
 
 .navigation-category.open-half {
+	width: 5rem;
 	padding: 0;
-	width: 4rem;
-	height: 4rem;
 	border-radius: var(--rounded-pill);
 	margin-inline: auto;
 	justify-content: center;

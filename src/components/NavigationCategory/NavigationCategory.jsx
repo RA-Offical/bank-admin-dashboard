@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import { sprite } from "../../utils/images";
 
 const NavigationCategory = ({
@@ -6,8 +7,9 @@ const NavigationCategory = ({
 	icon,
 	id,
 	setCategoryNumber,
-	isOpenHalf,
 }) => {
+	const { isOpenHalf } = useSelector((store) => store.sidebar);
+
 	return (
 		<a
 			href="#"

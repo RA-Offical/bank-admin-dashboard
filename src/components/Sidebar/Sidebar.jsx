@@ -1,17 +1,20 @@
 import { useState, useRef, useEffect } from "react";
 import { person_one, sprite } from "../../utils/images";
 import { Navigation } from "../";
+import { useSelector, useDispatch } from "react-redux";
+import { setIsOpenHalf, setIsOpen } from "../../features/sidebarSlice";
 
-const Sidebar = ({ isOpen, setIsOpen }) => {
-	const [isOpenHalf, setIsOpenHalf] = useState(true);
+const Sidebar = () => {
 	const sidebarContainerRef = useRef();
+	const dispatch = useDispatch();
+	const { isOpen, isOpenHalf } = useSelector((store) => store.sidebar);
 
 	// useEffect for handling
 	useEffect(() => {
 		sidebarContainerRef.current.addEventListener("click", (e) => {
 			const target = e.target;
 			if (!target.matches(".sidebar, .sidebar *")) {
-				setIsOpen(false);
+				dispatch(setIsOpen(false));
 			}
 		});
 	}, []);
@@ -30,7 +33,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 					<button
 						className="btn btn--icon"
 						onClick={() => {
-							setIsOpenHalf(true);
+							dispatch(setIsOpenHalf(true));
 						}}
 					>
 						<svg
@@ -44,7 +47,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 					<button
 						className="btn btn--icon"
 						onClick={() => {
-							setIsOpenHalf(false);
+							dispatch(setIsOpenHalf(false));
 						}}
 					>
 						<svg
@@ -71,7 +74,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 				</header>
 
 				{/* navigation area */}
-				<Navigation isOpenHalf={isOpenHalf} />
+				<Navigation />
 			</div>
 		</aside>
 	);

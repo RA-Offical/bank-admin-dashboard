@@ -1,6 +1,11 @@
 import { sprite } from "../../utils/images";
+import { useSelector, useDispatch } from "react-redux";
+import { setIsOpen } from "../../features/sidebarSlice";
 
-const Header = ({ isOpen, setIsOpen }) => {
+const Header = () => {
+	const dispatch = useDispatch();
+	const { isOpen } = useSelector((store) => store.sidebar);
+
 	return (
 		<header className="flex align-ic justify-btw primary-header">
 			{/* left section */}
@@ -8,7 +13,7 @@ const Header = ({ isOpen, setIsOpen }) => {
 				{/* icon */}
 				<button
 					className="btn btn--icon btn--icon-primary"
-					onClick={() => setIsOpen(!isOpen)}
+					onClick={() => dispatch(setIsOpen(!isOpen))}
 				>
 					<svg className="icon-sm menu--icon">
 						<use xlinkHref={`${sprite}#menu`}></use>

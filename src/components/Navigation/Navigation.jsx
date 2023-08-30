@@ -1,9 +1,11 @@
 import { useState, memo } from "react";
 import { NavigationCategory } from "../";
 import { navData } from "../../data/navData";
+import { useSelector } from "react-redux";
 
-const Navigation = ({ isOpenHalf }) => {
+const Navigation = () => {
 	const [categoryNumber, setCategoryNumber] = useState(1);
+	const { isOpenHalf } = useSelector((store) => store.sidebar);
 
 	return (
 		<nav className={`primary-nav ${isOpenHalf && "open-half"}`}>
@@ -15,7 +17,6 @@ const Navigation = ({ isOpenHalf }) => {
 								classes={categoryNumber === data.id && "active"}
 								{...data}
 								setCategoryNumber={setCategoryNumber}
-								isOpenHalf={isOpenHalf}
 							/>
 						</li>
 					);

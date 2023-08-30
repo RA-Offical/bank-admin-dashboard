@@ -14,8 +14,6 @@ import LoanCard from "./components/LoanCard/LoanCard";
 import SubscriptionCard from "./components/SubscriptionCard/SubscriptionCard";
 
 function App() {
-	const [isOpen, setIsOpen] = useState(false);
-
 	// useEffect(() => {
 	// 	// set the sidebar preference
 	// 	const sidebarPref = window.localStorage.getItem("sidebarPref");
@@ -32,10 +30,10 @@ function App() {
 	return (
 		<div className="app">
 			<div className="flex container">
-				<Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+				<Sidebar />
 
 				<div className="content">
-					<Header setIsOpen={setIsOpen} isOpen={isOpen} />
+					<Header />
 
 					<main>
 						<div className="main-content">

@@ -9,7 +9,28 @@ const Sidebar = () => {
 	const dispatch = useDispatch();
 	const { isOpen, isOpenHalf } = useSelector((store) => store.sidebar);
 
-	// useEffect for handling
+	// when application loads check if user preference is present
+	useEffect(() => {
+		const sidebarPref = window.localStorage.getItem("sidebarPref");
+		if (!sidebarPref) return;
+
+		const { isOpen, isOpenHalf } = JSON.parse(sidebarPref);
+
+		console.log(typeof isOpen, typeof isOpenHalf);
+
+		dispatch(setIsOpen(isOpen));
+		dispatch(setIsOpenHalf(isOpenHalf));
+	}, []);
+
+	// storing user sidebar preference
+	useEffect(() => {
+		window.localStorage.setItem(
+			"sidebarPref",
+			JSON.stringify({ isOpen, isOpenHalf })
+		);
+	}, [isOpen, isOpenHalf]);
+
+	// useEffect for closing sidebar when click happen on outside
 	useEffect(() => {
 		sidebarContainerRef.current.addEventListener("click", (e) => {
 			const target = e.target;
@@ -21,7 +42,7 @@ const Sidebar = () => {
 
 	return (
 		<aside
-			className={`sidebar-wrapper  ${isOpen && "open"}`}
+			className={`sidebar-wrapper ${isOpen && "open"}`}
 			ref={sidebarContainerRef}
 		>
 			<div
